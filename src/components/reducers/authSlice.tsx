@@ -13,16 +13,13 @@ export const authSlice = createSlice({
   name: "loginCheck",
   initialState,
   reducers: {
-    authPass: (state) => {
-      state.value = true;
-    },
-    authFail: (state) => {
-      state.value = false;
+    setAuth: (state, action) => {
+      state.value = action.payload;
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { authPass, authFail } = authSlice.actions;
+export const { setAuth } = authSlice.actions;
 
 export default authSlice.reducer;

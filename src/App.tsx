@@ -8,6 +8,9 @@ import { store } from "./components/store/store";
 import { Provider } from "react-redux";
 
 function App() {
+  const isLoggedIn =
+    localStorage.getItem("isLoggedIn") === "true" ? true : false;
+
   return (
     <Provider store={store}>
       {/* <LoginProvider> */}
@@ -15,6 +18,7 @@ function App() {
         <PageRoutes />
       </BrowserRouter>
       {/* </LoginProvider> */}
+      {/* //{" "} */}
     </Provider>
   );
 }

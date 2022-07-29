@@ -1,25 +1,21 @@
 import { Button, Form, Input } from "antd";
 import { loginContext, contextInterface } from "../contexts/LoginContext";
 import { useContext, useEffect, useState } from "react";
+import { setAuth } from "../reducers/authSlice";
+import { useDispatch } from "react-redux";
 
 import "./login.css";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
-  const { isLoggedIn, setIsLoggedIn } = useContext(
-    loginContext
-  ) as contextInterface;
+  const dispatch = useDispatch();
   const [errMsg, setErrMsg] = useState<string>("");
   const navigate = useNavigate();
-
-  useEffect(() => {
-    console.log("is Logged? ", isLoggedIn);
-  }, [isLoggedIn]);
-
   const onFinish = (values: any) => {
     console.log(values);
     if (values.username === "oshin" && values.password === "gansi") {
-      setIsLoggedIn(true);
+      dispatch(setAuth(true));
+      localStorage.setItem("isLoggedIn", "true");
       navigate("/home");
     } else {
       setErrMsg("Wrong email or password");
