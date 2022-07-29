@@ -4,14 +4,18 @@ import "./App.css";
 import { LoginProvider } from "./components/contexts/LoginContext";
 import PageRoutes from "./components/pageRoutes/PageRoutes";
 import { BrowserRouter } from "react-router-dom";
+import { store } from "./components/store/store";
+import { Provider } from "react-redux";
 
 function App() {
   return (
-    <LoginProvider>
+    <Provider store={store}>
+      {/* <LoginProvider> */}
       <BrowserRouter>
         <PageRoutes />
       </BrowserRouter>
-    </LoginProvider>
+      {/* </LoginProvider> */}
+    </Provider>
   );
 }
 
