@@ -2,7 +2,9 @@ import DashBoard from "../dashboard/dashboard";
 import Login from "../login/login";
 import Home from "../home/Home";
 import { Routes, Route, Navigate } from "react-router-dom";
-import ManagePatient from "../managePatient/managePatient";
+import CreateNewPatient from "../managePatient/CreateNewPatient";
+import PatientList from "../managePatient/PatientList";
+import UserRegister from "../user/UserRegister";
 
 function PageRoutes() {
   const isLoggedIn =
@@ -16,7 +18,8 @@ function PageRoutes() {
         element={isLoggedIn ? <Home /> : <Navigate to={"/"} />}
       />
       <Route path="*" element={<h1>Page Not Found</h1>} />
-      <Route path="/create" element={<ManagePatient />} />
+      <Route path="/create" element={<CreateNewPatient />} />
+      <Route path="/patientlist" element={<PatientList />} />
     </Routes>
   );
 }
