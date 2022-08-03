@@ -20,6 +20,22 @@ function Home() {
       >
         Patient List
       </Button>
+
+      <Button
+        type="primary"
+        onClick={() => navigate("/vaccine")}
+        htmlType="submit"
+      >
+        Add Vaccine
+      </Button>
+
+      <Button
+        type="primary"
+        onClick={() => navigate("/vaccinelist")}
+        htmlType="submit"
+      >
+        Vaccine List
+      </Button>
     </div>
   );
 }
