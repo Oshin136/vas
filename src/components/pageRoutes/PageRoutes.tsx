@@ -20,6 +20,7 @@ function PageRoutes() {
       <Route path="*" element={<h1>Page Not Found</h1>} />
       <Route path="/create" element={<CreateNewPatient />} />
       <Route path="/patientlist" element={<PatientList />} />
+      <Route path="/register" element={<UserRegister />} />
     </Routes>
   );
 }
