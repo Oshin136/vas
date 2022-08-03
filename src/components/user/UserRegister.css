@@ -1,0 +1,18 @@
+.form-center {
+  height: 100vh;
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.form-wrapper {
+  box-shadow: inset;
+  width: 300px;
+}
+
+.btn {
+  border-radius: 6px;
+}

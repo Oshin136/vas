@@ -15,6 +15,14 @@ function DashBoard() {
       >
         Login
       </Button>
+      <Button
+        type="primary"
+        onClick={() => {
+          navigate("/register");
+        }}
+      >
+        Register
+      </Button>
     </div>
   );
 }
