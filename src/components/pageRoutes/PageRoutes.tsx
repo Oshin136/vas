@@ -5,6 +5,8 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import CreateNewPatient from "../managePatient/CreateNewPatient";
 import PatientList from "../managePatient/PatientList";
 import UserRegister from "../user/UserRegister";
+import VaccineForm from "../vaccines/VaccineForm";
+import VaccineList from "../vaccines/VaccineList";
 
 function PageRoutes() {
   const isLoggedIn =
@@ -21,6 +23,8 @@ function PageRoutes() {
       <Route path="/create" element={<CreateNewPatient />} />
       <Route path="/patientlist" element={<PatientList />} />
       <Route path="/register" element={<UserRegister />} />
+      <Route path="/vaccine" element={<VaccineForm />} />
+      <Route path="/vaccinelist" element={<VaccineList />} />
     </Routes>
   );
 }
