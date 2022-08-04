@@ -8,7 +8,8 @@ import UserRegister from "../user/UserRegister";
 import VaccineForm from "../vaccines/VaccineForm";
 import VaccineList from "../vaccines/VaccineList";
 import CreateNewAppointment from "../appointments/CreateNewAppointment";
-
+import AppointmentList from "../appointments/AppointmentList";
+import AppointmentCalendar from "../appointments/AppointmentCalendar";
 function PageRoutes() {
   const isLoggedIn =
     localStorage.getItem("isLoggedIn") === "true" ? true : false;
@@ -27,6 +28,8 @@ function PageRoutes() {
       <Route path="/vaccine" element={<VaccineForm />} />
       <Route path="/vaccinelist" element={<VaccineList />} />
       <Route path="/new-appointment" element={<CreateNewAppointment />} />
+      <Route path="/appointmentlist" element={<AppointmentList />} />
+      <Route path="/appointment-calendar" element={<AppointmentCalendar />} />
     </Routes>
   );
 }
