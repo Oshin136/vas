@@ -7,6 +7,7 @@ import PatientList from "../managePatient/PatientList";
 import UserRegister from "../user/UserRegister";
 import VaccineForm from "../vaccines/VaccineForm";
 import VaccineList from "../vaccines/VaccineList";
+import CreateNewAppointment from "../appointments/CreateNewAppointment";
 
 function PageRoutes() {
   const isLoggedIn =
@@ -25,6 +26,7 @@ function PageRoutes() {
       <Route path="/register" element={<UserRegister />} />
       <Route path="/vaccine" element={<VaccineForm />} />
       <Route path="/vaccinelist" element={<VaccineList />} />
+      <Route path="/new-appointment" element={<CreateNewAppointment />} />
     </Routes>
   );
 }
