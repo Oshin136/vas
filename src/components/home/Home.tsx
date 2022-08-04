@@ -44,6 +44,14 @@ function Home() {
       >
         New Appointment
       </Button>
+
+      <Button
+        type="primary"
+        onClick={() => navigate("/appointmentlist")}
+        htmlType="submit"
+      >
+        Appointment List
+      </Button>
     </div>
   );
 }
