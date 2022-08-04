@@ -36,6 +36,14 @@ function Home() {
       >
         Vaccine List
       </Button>
+
+      <Button
+        type="primary"
+        onClick={() => navigate("/new-appointment")}
+        htmlType="submit"
+      >
+        New Appointment
+      </Button>
     </div>
   );
 }
