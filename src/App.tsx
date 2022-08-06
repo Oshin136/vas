@@ -1,8 +1,8 @@
 import "antd/dist/antd.css";
 import "./App.css";
-import PageRoutes from "./components/pageRoutes/PageRoutes";
+import PageRoutes from "./pageRoutes/PageRoutes";
 import { BrowserRouter } from "react-router-dom";
-import { store } from "./components/store/store";
+import { store } from "./store/store";
 import { Provider } from "react-redux";
 
 function App() {

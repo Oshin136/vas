@@ -1,15 +1,15 @@
-import DashBoard from "../dashboard/dashboard";
-import Login from "../login/login";
-import Home from "../home/Home";
+import DashBoard from "../components/dashboard/dashboard";
+import Login from "../components/login/login";
+import Home from "../components/home/Home";
 import { Routes, Route, Navigate } from "react-router-dom";
-import CreateNewPatient from "../managePatient/CreateNewPatient";
-import PatientList from "../managePatient/PatientList";
-import UserRegister from "../user/UserRegister";
-import VaccineForm from "../vaccines/VaccineForm";
-import VaccineList from "../vaccines/VaccineList";
-import CreateNewAppointment from "../appointments/CreateNewAppointment";
-import AppointmentList from "../appointments/AppointmentList";
-import AppointmentCalendar from "../appointments/AppointmentCalendar";
+import CreateNewPatient from "../components/managePatient/CreateNewPatient";
+import PatientList from "../components/managePatient/PatientList";
+import UserRegister from "../components/user/UserRegister";
+import VaccineForm from "../components/vaccines/VaccineForm";
+import VaccineList from "../components/vaccines/VaccineList";
+import CreateNewAppointment from "../components/appointments/CreateNewAppointment";
+import AppointmentList from "../components/appointments/AppointmentList";
+import AppointmentCalendar from "../components/appointments/AppointmentCalendar";
 function PageRoutes() {
   const isLoggedIn =
     localStorage.getItem("isLoggedIn") === "true" ? true : false;
