@@ -1,0 +1,29 @@
+.nav-container {
+  display: flex;
+  list-style: none;
+  height: 100px;
+  margin: 15px;
+  align-items: center;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-logo {
+  font-size: 50px;
+  font-weight: bold;
+  color: green;
+  padding: 10px;
+}
+
+.nav-right {
+  display: flex;
+  flex: -1;
+}
+
+.nav-item {
+  font-size: 20px;
+
+  border: 1px solid lightgray;
+  margin-right: 50px;
+  padding: 10px 20px;
+}
