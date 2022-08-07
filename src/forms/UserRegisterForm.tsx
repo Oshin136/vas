@@ -10,7 +10,6 @@ function UserRegisterForm() {
   const onFinish = (values: any) => {
     if (values.password != values.confirmpassword) {
       setErrMsg("Password do not match");
-      // alert("Password do not match");
     } else {
       navigate("/login");
     }

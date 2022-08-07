@@ -10,6 +10,7 @@ import VaccineList from "../components/vaccines/VaccineList";
 import CreateNewAppointment from "../components/appointments/CreateNewAppointment";
 import AppointmentList from "../components/appointments/AppointmentList";
 import AppointmentCalendar from "../components/appointments/AppointmentCalendar";
+import UserAppointment from "../components/appointments/UserAppointment";
 function PageRoutes() {
   const isLoggedIn =
     localStorage.getItem("isLoggedIn") === "true" ? true : false;
@@ -25,6 +26,7 @@ function PageRoutes() {
       <Route path="/create" element={<CreateNewPatient />} />
       <Route path="/patientlist" element={<PatientList />} />
       <Route path="/register" element={<UserRegister />} />
+      <Route path="/user-appointment" element={<UserAppointment />} />
       <Route path="/vaccine" element={<VaccineForm />} />
       <Route path="/vaccinelist" element={<VaccineList />} />
       <Route path="/new-appointment" element={<CreateNewAppointment />} />
