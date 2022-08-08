@@ -1,6 +1,5 @@
 import { Button, Input, Form, DatePicker, Select, Upload } from "antd";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 import { UploadOutlined } from "@ant-design/icons";
 import "./Form.css";
 
@@ -18,8 +17,6 @@ const provinceOption = [
 ];
 
 function CreateNewPatientForm() {
-  const [errMsg, setErrMsg] = useState<string>("");
-
   const navigate = useNavigate();
 
   const onFinish = (values: any) => {

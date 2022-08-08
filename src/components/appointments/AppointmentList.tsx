@@ -1,5 +1,4 @@
 import { Space, Table } from "antd";
-import moment from "moment";
 import React from "react";
 import "./AppointmentList.css";
 
